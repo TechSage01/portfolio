@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url("./fonts/Outfit-Medium.ttf");
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear forwards infinite;
+}
+
+
+@theme {
+    --font-outfit: "outfit";
+}
+.marquee {
+  overflow
+  : hidden;
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+  /* width: 300px; */
+  margin: auto;
+ 
+  animation: scroll 3s linear infinite;
+}
+
+/* Pause on hover */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee img {
+  width: 40px;
+  /* height: auto; */
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.marquee img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
