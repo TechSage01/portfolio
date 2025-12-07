@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="./images/crack.jpeg" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="text-gray-900">
+
     <!-- NAVBAR -->
-    <header class="sticky top-0 left-0 right-0 z-50">
+    <header class="sticky top-0 z-50">
         <nav
-            class="bg-white/30 backdrop-blur-sm flex gap-5 items-center mx-auto w-[320px] justify-center py-3 rounded-md px-3 border mt-10">
+            class="bg-white/30 backdrop-blur-sm flex gap-5 items-center justify-center max-w-sm sm:max-w-md md:max-w-lg  mx-auto py-3 px-4 rounded-md mt-10">
             <a href="https://x.com/_TechSage"><img src="./images/imgi_5_default.png" alt="X" class="w-7" /></a>
             <a href="https://github.com/TechSage01"><img src="./images/imgi_4_default.png" alt="Github"
                     class="w-7 hover:opacity-70 transition" /></a>
@@ -26,204 +29,263 @@
                     alt="LinkedIn" class="w-7 hover:opacity-70 transition" /></a>
 
             <a href="#">
-                <button class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
-                    Contact Me
+                <button
+                    class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition flex items-center gap-1">
+                    Contact Me <i class="fa-solid fa-paper-plane"></i>
                 </button>
             </a>
         </nav>
     </header>
 
     <!-- MAIN SECTION -->
-    <section class="w-[900px] mx-auto px-6 mt-10 border">
-        <div class="bg-white p-7 rounded-xl">
-            <img src="./images/crack.jpeg" alt="" class="w-[150px] rounded-full mb-4 shadow-lg" />
+    <section class="max-w-3xl w-full mx-auto px-4 mt-10 border black">
 
-            <h1 class="text-3xl font-bold">
-                Hey, I'm <span class="text-red-600">Abdulsalam Adebimpe.</span>
+        <!-- PROFILE CARD -->
+        <div class=" p-6 sm:p-8  text-left">
+            <img src="./images/crack.jpeg" alt="Profile" class="w-36 sm:w-40 rounded-full mb-4 shadow-lg" />
+
+            <h1 class="text-2xl sm:text-3xl font-bold">Hey, I'm <span class="text-red-600">Abdulsalam Adebimpe.</span>
             </h1>
+            <h2 class="text-xl sm:text-2xl font-semibold mt-1 text-gray-800">Full Stack Developer.</h2>
 
-            <h2 class="text-xl font-semibold mt-1 text-gray-800">
-                Full Stack Developer.
-            </h2>
-
-            <p class="mt-3 text-lg text-gray-700 leading-relaxed w-[600px]">
-                I craft premium digital experiences building fast, secure, and
-                reliable solutions using Modern web technologies.
+            <p class="mt-3 text-gray-700 leading-relaxed sm:text-lg lg:max-w-xl">
+                I craft premium digital experiences building fast, secure, and reliable solutions using modern web
+                technologies.
             </p>
 
-            <p class="mt-2 text-gray-600">
-                I love creating clean, simple, responsive websites and improving my
-                skills daily.
-            </p>
+            <p class="mt-2 text-gray-600 sm:text-base">I love creating clean, simple, responsive websites and improving
+                my skills daily.</p>
 
-            <!-- Buttons -->
-            <div class="flex mt-6 gap-4 md:flex-row flex-col">
-                <a href="https://github.com/TechSage01" class="w-full md:w-auto">
+            <div class="flex flex-col sm:flex-row gap-4 mt-6 justify-left">
+                <a href="https://github.com/TechSage01">
                     <button
-                        class="w-full md:w-auto px-5 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition">
+                        class="px-5 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition w-full sm:w-auto">
                         View Projects <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </a>
-
-                <a href="#" class="w-full md:w-auto">
+                <a href="#">
                     <button
-                        class="w-full md:w-auto px-5 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-700 transition">
+                        class="px-5 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-700 transition w-full sm:w-auto">
                         Download CV
                     </button>
                 </a>
             </div>
         </div>
 
-
-        <div class="mt-10 bg-white p-7 rounded-xl mx-auto">
-            <h1 class="text-3xl font-bold px-2">About</h1>
-
-            <p class="px-2 mt-3 text-gray-700 leading-relaxed w-[700px]">
-                I love building clean, scalable, and user-focused digital products that solve real problems.
-                My work blends creativity, functionality, and innovation to deliver meaningful and efficient
-                experiences.
+        <!-- ABOUT SECTION -->
+        <div class="mt-10 p-6 sm:p-8 rounded-xl ">
+            <h2 class="text-2xl sm:text-3xl font-bold text-left">About </h2>
+            <p class="mt-4 text-gray-700 leading-relaxed sm:text-lg lg:max-w-xl ">
+                I love building clean, scalable, and user-focused digital products that solve real problems. My work
+                blends
+                creativity, functionality, and innovation to deliver meaningful and efficient experiences.
             </p>
-
-            <p class="px-2 mt-3 text-gray-700 leading-relaxed w-[680px]">
-                I love building clean, scalable, and user-focused digital products that solve real problems.
+            <p class="mt-4 text-gray-700 leading-relaxed sm:text-lg lg:max-w-xl">
                 I'm <span class="font-bold">Abdulsalam Adebimpe</span>, a Nigerian full-stack developer passionate about
-                crafting fast,
-                modern, and seamless user experiences using cutting-edge web technologies.
+                crafting
+                fast, modern, and seamless user experiences using cutting-edge web technologies.
             </p>
+        </div>
 
-            <p class="px-2 mt-3 text-gray-700 leading-relaxed w-[700px]">
-                I love building clean">
-                As a self-driven developer, I continue to level up my skills through consistent learning,
-                real-world building, and hands-on problem-solving.
-            </p>
-
-            <!-- CARDS FIXED TO STACK ON MOBILE -->
-            <div class="relative w-full max-w-[450px] mx-auto mt-10 pb-40 border-b h-[320px]">
-
-                <!-- CARD 1 (right leaning) -->
-                <div class="bg-white p-4 rounded-2xl shadow-xl w-[220px] 
-                mx-auto transform -rotate-6 absolute left-[270px] -translate-x-1/4 top-0">
-                    <img src="./images/WhatsApp Image 2025-12-05 at 17.00.55.jpeg"
-                        class="w-full h-[220px] object-cover rounded-xl" />
-                    <p class="text-center mt-3 font-bold text-gray-700">TechSage.OX</p>
-                </div>
-
-                <!-- CARD 2 (entering deeper from the left, reverse V) -->
-                <div class="bg-white p-4 rounded-2xl shadow-xl w-[220px]
-                absolute left-[120px] -translate-x-1/2 top-[0] transform rotate-6">
-                    <img src="./images/308c48ea-23c2-4897-810a-34adcf634fad.jpg"
-                        class="w-[200px] h-[220px] object-cover rounded-xl" />
-                    <p class="text-center mt-3 font-bold text-gray-700">TechSage</p>
-                </div>
+        <!-- CARDS SECTION -->
+        <div class="mt-10 flex flex-col md:flex-row justify-center items-center gap-6">
+            <div class="bg-white p-4 rounded-2xl shadow-xl w-full md:w-56">
+                <img src="./images/WhatsApp Image 2025-12-05 at 17.00.55.jpeg"
+                    class="w-full h-56 object-cover rounded-xl" />
+                <p class="text-center mt-3 font-bold text-gray-700">TechSage.OX</p>
             </div>
-            <div class="mt-10 marquee">
-                <div class="marquee-content">
-                    <img src="./images/imgi_4_css.png" alt="">
-                    <img src="./images/imgi_5_bootsrap.png" alt="">
-                    <img src="./images/imgi_7_git.png" alt="">
-                    <img src="./images/imgi_8_github.png" alt="">
-                    <img src="./images/imgi_9_js.png" alt="">
-                    <img src="./images/imgi_10_html.png" alt="">
-                    <img src="./images/imgi_11_react.png" alt="">
-                    <img src="./images/imgi_13_sass.png" alt="">
-
-                    <!-- duplicate for seamless loop -->
-                    <img src="./images/imgi_4_css.png" alt="">
-                    <img src="./images/imgi_5_bootsrap.png" alt="">
-                    <img src="./images/imgi_7_git.png" alt="">
-                    <img src="./images/imgi_8_github.png" alt="">
-                    <img src="./images/imgi_9_js.png" alt="">
-                    <img src="./images/imgi_10_html.png" alt="">
-                    <img src="./images/imgi_11_react.png" alt="">
-                    <img src="./images/imgi_13_sass.png" alt="">
-                </div>
+            <div class="bg-white p-4 rounded-2xl shadow-xl w-full md:w-56">
+                <img src="./images/308c48ea-23c2-4897-810a-34adcf634fad.jpg"
+                    class="w-full h-56 object-cover rounded-xl" />
+                <p class="text-center mt-3 font-bold text-gray-700">TechSage</p>
             </div>
-            <div>
-                <h2 class="text-3xl font-bold pt-20 text-center">Some Of My Projects:</h2>
-                <!-- PROJECTS SECTION -->
-                <div class="mt-16">
-                    <!-- <h2 class="text-3xl font-bold text-center mb-10">
-                        Here's What I've Been Up To.
-                    </h2> -->
+        </div>
 
-                    <div class="grid md:grid-cols-2 gap-10 mb-20">
+        <!-- MARQUEE SECTION -->
+        <div class="marquee mt-10">
+            <div class="marquee-content flex gap-6">
+                <img src="./images/imgi_4_css.png" class="w-10" />
+                <img src="./images/imgi_5_bootsrap.png" class="w-10" />
+                <img src="./images/imgi_7_git.png" class="w-10" />
+                <img src="./images/imgi_8_github.png" class="w-10" />
+                <img src="./images/imgi_9_js.png" class="w-10" />
+                <img src="./images/imgi_10_html.png" class="w-10" />
+                <img src="./images/imgi_11_react.png" class="w-10" />
+                <img src="./images/imgi_13_sass.png" class="w-10" />
+                <!-- Duplicate for seamless loop -->
+                <img src="./images/imgi_4_css.png" class="w-10" />
+                <img src="./images/imgi_5_bootsrap.png" class="w-10" />
+                <img src="./images/imgi_7_git.png" class="w-10" />
+                <img src="./images/imgi_8_github.png" class="w-10" />
+                <img src="./images/imgi_9_js.png" class="w-10" />
+                <img src="./images/imgi_10_html.png" class="w-10" />
+                <img src="./images/imgi_11_react.png" class="w-10" />
+                <img src="./images/imgi_13_sass.png" class="w-10" />
+            </div>
+        </div>
 
-                        <!-- PROJECT CARD 1 -->
-                        <div class="bg-white rounded-xl shadow-lg  hover:shadow-2xl transition">
-                            <a href="https://nova-wallet-sand.vercel.app/">
-                                <img src="./images/NovaWallet.png"
-                                class="w-[330px] h-[250px] object-cover rounded-lg ml-6" alt="Project preview">
-                            </a>
 
-                            <h3 class="mt-4 text-xl font-bold pl-6">NovaWallet</h3>
-
-                            <p class="text-gray-600 mt-2 pl-6">
-                                A full-featured financial tracker with income/expense management,
-                                authentication, analytics, and a clean modern UI.
-                            </p>
-                            <button class="bg-black text-white px-4 py-2 rounded-lg ml-6 mt-3 mb-5">View Project <i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-
-                        <!-- PROJECT CARD 2 -->
-                        <div class="bg-white rounded-xl shadow-lg p-4 hover:shadow-2xl transition">
-                            <a href="https://skycast-web.netlify.app/"><img src="./images/skycast.png" class="w-full h-60 object-cover rounded-lg"
-                                alt="Project preview"></a>
-
-                            <h3 class="mt-4 text-xl font-bold">SkyCast</h3>
-
-                            <p class="text-gray-600 mt-2">
-                                A real-time weather forecasting web app displaying live climate
-                                data, temperature stats, and location-based updates.
-                            </p>
-                             <button class="bg-black text-white px-4 py-2 rounded-lg ml-2 mt-3 mb-5">View Project <i class="fa-solid fa-chevron-right"></i></button>
-                            
-                        </div>
-
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-10">
-
-                        <!-- PROJECT CARD 3 -->
-                        <div class="bg-white rounded-xl shadow-lg  hover:shadow-2xl transition">
-                           <a href="https://digital-oceans.vercel.app/">
-                             <img src="./images/DigitalOcean.png"
-                                class="w-[330px] h-[250px] object-cover rounded-lg ml-6" alt="Project preview">
-                           </a>
-                            <h3 class="mt-4 text-xl font-bold pl-6">DigitalOcean</h3>
-
-                            <p class="text-gray-600 mt-2 pl-6">
-                                A responsive landing page for a cloud infrastructure
-                                provider, showcasing services and solutions.
-                                It features modern design and smooth navigation.
-                            </p>
-                             <button class="bg-black text-white px-4 py-2 rounded-lg ml-6 mt-3 mb-5">View Project <i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-
-                        <!-- PROJECT CARD 4 -->
-                        <div class="bg-white rounded-xl shadow-lg p-4 hover:shadow-2xl transition">
-                            <a href="https://flex-zone-fitness.vercel.app/">
-                                <img src="./images/flex-zone.png" class="w-full h-60 object-cover rounded-lg"
-                                alt="Project preview">
-                            </a>
-
-                            <h3 class="mt-4 text-xl font-bold">FlexZone Fitness </h3>
-
-                            <p class="text-gray-600 mt-2">
-                                A modern fitness website offering workout plans,
-                                trainer info, and membership details.
-                                It features a sleek design and user-friendly interface.
-                            </p>
-                             <button class="bg-black text-white px-4 py-2 rounded-lg ml-2 mt-3 mb-5">View Project <i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                     <a href="https://github.com/TechSage01">
-                        <button class="bg-black text-white px-4 py-2 rounded-lg ml-80 mt-3 mb-5 mt-[40px]">View Project <i class="fa-solid fa-chevron-right"></i></button>
-                     </a>
+        <!-- PROJECTS SECTION -->
+        <div class="mt-16">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center">Some Of My Projects</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <!-- Example Project Card -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-4">
+                    <a href="https://nova-wallet-sand.vercel.app/">
+                        <img src="./images/NovaWallet.png" class="w-full h-56 object-cover rounded-lg" />
+                    </a>
+                    <h3 class="mt-4 text-xl font-bold">NovaWallet</h3>
+                    <p class="text-gray-600 mt-2 text-sm sm:text-base">
+                        A full-featured financial tracker with income/expense management, authentication, analytics, and
+                        a clean
+                        modern UI.
+                    </p>
+                    <a href="https://nova-wallet-sand.vercel.app/">
+                        <button class="bg-black text-white px-4 py-2 rounded-lg mt-4 w-full sm:w-auto">View Project
+                            <i class="fa-solid fa-chevron-right"></i></button>
+                    </a>
                 </div>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-4"> <a
+                        href="https://skycast-web.netlify.app/"> <img src="./images/skycast.png"
+                            class="w-full h-[220px] object-cover rounded-lg" alt="SkyCast" /> </a>
+                    <h3 class="mt-4 text-xl font-bold">SkyCast</h3>
+                    <p class="text-gray-600 mt-2"> A real-time weather forecasting web app with climate data and
+                        location-based updates. </p> <a href="https://skycast-web.netlify.app/"> <button
+                            class="bg-black text-white px-4 py-2 rounded-lg mt-4"> View Project <i
+                                class="fa-solid fa-chevron-right"></i> </button> </a>
+                </div> <!-- PROJECT CARD 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-4"> <a
+                        href="https://digital-oceans.vercel.app/"> <img src="./images/DigitalOcean.png"
+                            class="w-full h-[220px] object-cover rounded-lg" alt="DigitalOcean" /> </a>
+                    <h3 class="mt-4 text-xl font-bold">DigitalOcean</h3>
+                    <p class="text-gray-600 mt-2"> A cloud infrastructure landing page with modern design and smooth
+                        navigation. </p> <a href="https://digital-oceans.vercel.app/"> <button
+                            class="bg-black text-white px-4 py-2 rounded-lg mt-4"> View Project <i
+                                class="fa-solid fa-chevron-right"></i> </button> </a>
+                </div> <!-- PROJECT CARD 4 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-4"> <a
+                        href="https://flex-zone-fitness.vercel.app/"> <img src="./images/flex-zone.png"
+                            class="w-full h-[220px] object-cover rounded-lg" alt="FlexZone" /> </a>
+                    <h3 class="mt-4 text-xl font-bold">FlexZone Fitness</h3>
+                    <p class="text-gray-600 mt-2"> A modern fitness website offering workout plans and membership
+                        information. </p> <a href="https://flex-zone-fitness.vercel.app/"> <button
+                            class="bg-black text-white px-4 py-2 rounded-lg mt-4"> View Project <i
+                                class="fa-solid fa-chevron-right"></i> </button> </a>
+                </div>
+
 
             </div>
+            <div class="mt-10 flex justify-center">
+                <a href="https://github.com/TechSage01">
+                    <button class="bg-black text-white px-6 py-3 rounded-lg">
+                        View More Projects <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </a>
+            </div>
+
+
+            <!-- CONTACT SECTION -->
+            <div class="mt-20 bg-white p-6 sm:p-8 rounded-xl shadow-lg max-w-xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-3xl font-bold">Let's work together</h2>
+                <p class="mt-3 text-gray-600 sm:text-lg">If you're interested in collaborating or have any questions,
+                    feel free
+                    to reach out. I am always available!</p>
+                <!-- SUCCESS TOAST -->
+                <div id="successToast"
+                    class="fixed top-5 right-5 bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hidden"> Message
+                    sent successfully! </div> <!-- ERROR TOAST -->
+                <div id="errorToast"
+                    class="fixed top-5 right-5 bg-red-600 text-white px-4 py-3 rounded-lg shadow-lg hidden"> Failed to
+                    send message. Try again. </div>
+                <form id="contactForm" class="mt-6 space-y-4">
+                    <input id="fullName" type="text" placeholder="Full Name"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black outline-none"
+                        required />
+                    <input id="email" type="email" placeholder="Email Address"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black outline-none"
+                        required />
+                    <textarea id="yourMessage" placeholder="Your Message" rows="5"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black outline-none"
+                        required></textarea>
+                    <button id="sendBtn"
+                        class="w-full bg-black text-white p-3 rounded-lg hover:bg-gray-800 transition font-semibold flex items-center justify-center gap-2">
+                        <span id="btnText">Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span id="loadingSpinner"
+                            class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                    </button>
+                </form>
+
+                <div class="border-t border-black mt-10 pt-4">
+                    <p class="text-center text-gray-600">© 2025 TechSage. All rights reserved.</p>
+                </div>
+            </div>
+
     </section>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS
+        emailjs.init({ publicKey: "zghJ1PMjPIn9_4HqX" });
+
+        const form = document.getElementById("contactForm");
+        const sendBtn = document.getElementById("sendBtn");
+        const btnText = document.getElementById("btnText");
+        const spinner = document.getElementById("loadingSpinner");
+
+        const successToast = document.getElementById("successToast");
+        const errorToast = document.getElementById("errorToast");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const params = {
+                fullName: document.getElementById("fullName").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("yourMessage").value
+            };
+
+            // Disable button + show loader
+            sendBtn.disabled = true;
+            btnText.textContent = "Sending...";
+            sendBtn.style.cursor = "not-allowed";
+            sendBtn.style.backgroundColor = "gray";
+            spinner.classList.remove("hidden");
+
+            emailjs.send("service_bwz3ey9", "template_tgqxo48", params)
+                .then(() => {
+                    showToast(successToast);
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("EmailJS Error:", error);
+                    showToast(errorToast);
+                })
+                .finally(() => {
+                    sendBtn.disabled = false;
+                    btnText.textContent = "Send Message";
+                    spinner.classList.add("hidden");
+                });
+        });
+
+        // Toast function
+        function showToast(toast) {
+            toast.classList.remove("hidden");
+            setTimeout(() => {
+                toast.classList.add("hidden");
+            }, 3000);
+        }
+    </script>
 
 </body>
 
+<!-- 'service id = service_bwz3ey9' -->
 
 </html>
