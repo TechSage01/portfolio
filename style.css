@@ -14,6 +14,22 @@ html, body {
   min-height: 100vh;
 }
 
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDownFade 0.9s ease-out forwards;
+}
+
+
 @font-face {
     font-family: "outfit";
     src: url("./fonts/Outfit-Medium.ttf");
@@ -46,7 +62,7 @@ html, body {
 .marquee-content {
   display: flex;
   gap: 30px;
-  padding-top: 40px;
+  padding-top: 10px;
   /* width: 300px; */
   margin: auto;
 
